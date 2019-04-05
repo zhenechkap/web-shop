@@ -1,8 +1,0 @@
-
-
-Date:2018-11-27 12:33:56,485
-Thread:[1]
-Level:ERROR
-Logger:Syncfusion.SyncfusionItemTemplates.SyncfusionItemTemplatesPackage                         [(null)]
-Message:System.NullReferenceException: Object reference not set to an instance of an object.
-   at Syncfusion.SyncfusionItemTemplates.SyncfusionItemTemplatesPackage.AddSyncfusionItemmenu_BeforeQueryStatus(Object sender, EventArgs e) in d:\Work\SVN\16.3.0.1\Extensions\Extensions\Utilities\Windows Form\Src\SyncfusionItemTemplatesPackage.cs:line 138
