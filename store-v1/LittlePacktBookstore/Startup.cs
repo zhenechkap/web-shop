@@ -10,6 +10,7 @@ using LittlePacktBookstore.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -39,16 +40,19 @@ namespace LittlePacktBookstore
 				var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 				c.IncludeXmlComments(xmlPath);
 			});
-
+            services.AddAuthentication();
+            services.AddIdentity<SiteUser, IdentityRole>()
+                .AddEntityFrameworkStores<LittlePacktBookStoreDbContex>();
 			services.AddDbContext<LittlePacktBookStoreDbContex>(dbContextOptionBuilder =>
 			dbContextOptionBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 			services.AddScoped<IRepository<Book>, SqlBooksRepository>();
 			services.AddScoped<IRepository<Carousel>, SqlCarouselsRepository>();
 			services.AddScoped<IRepository<Order>, SqlOrdersRepository>();
-        }
+			services.AddScoped<IRepository<Country>, MockCountryRepository>();
+		}
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -59,8 +63,9 @@ namespace LittlePacktBookstore
 			{
 				c.SwaggerEndpoint("/swagger/v1/swagger.json", "LittlePacktBookStore API");
 			});
-			app.UseMvc(ConfigureRoutes);
 			app.UseStaticFiles();
+            app.UseAuthentication();
+			app.UseMvc(ConfigureRoutes);
 
             //app.Run(async (context) =>
             //{

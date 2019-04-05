@@ -7,7 +7,7 @@
         <member name="T:LittlePacktBookstore.Controllers.BookController">
             <summary>
             Book Controller.
-            </summary>
+            </summary> 
         </member>
         <member name="M:LittlePacktBookstore.Controllers.BookController.#ctor(LittlePacktBookstore.Services.IRepository{LittlePacktBookstore.Models.Book},Microsoft.Extensions.Logging.ILogger{LittlePacktBookstore.Controllers.BookController})">
             <summary>
