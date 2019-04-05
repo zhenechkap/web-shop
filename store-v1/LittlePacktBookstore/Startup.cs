@@ -45,10 +45,11 @@ namespace LittlePacktBookstore
 			services.AddScoped<IRepository<Book>, SqlBooksRepository>();
 			services.AddScoped<IRepository<Carousel>, SqlCarouselsRepository>();
 			services.AddScoped<IRepository<Order>, SqlOrdersRepository>();
-        }
+			services.AddScoped<IRepository<Country>, MockCountryRepository>();
+		}
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
