@@ -1,9 +1,10 @@
 ﻿using LittlePacktBookstore.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace LittlePacktBookstore.Data
 {
-    public class LittlePacktBookStoreDbContex:DbContext
+    public class LittlePacktBookStoreDbContex:IdentityDbContext<SiteUser>
     {
 		public LittlePacktBookStoreDbContex(DbContextOptions options):base(options)
 		{
