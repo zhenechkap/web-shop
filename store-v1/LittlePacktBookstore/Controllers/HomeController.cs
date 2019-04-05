@@ -6,6 +6,7 @@ using LittlePacktBookstore.Models;
 using LittlePacktBookstore.Services;
 using LittlePacktBookstore.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LittlePacktBookstore.Controllers
 {
@@ -130,6 +131,51 @@ namespace LittlePacktBookstore.Controllers
 		{
 			
 			return View(_OrdersRepo.GetAll());
+		}
+		[HttpGet]
+		public IActionResult Register()
+		{
+			var model = new Registration
+			{
+				MailingAddress = new Address
+				{
+					Countries = new List<SelectListItem>
+					{
+						new SelectListItem{Value="Country1", Text="Country1", Selected=true},
+						new SelectListItem{Value="Country2", Text="Country2"},
+						new SelectListItem{Value="Country3", Text="Country3"},
+						new SelectListItem{Value="Country4", Text="Country4"},
+						new SelectListItem{Value="Country5", Text="Country5"}
+					}
+				}
+			};
+			return View("Register", model);
+		}
+
+		[HttpPost]
+		public IActionResult Register(Registration registration)
+		{
+			return View("Register", registration);
+		}
+
+		public IActionResult CheckEmail(string email)
+		{
+			List<string> emails = new List<string>
+			{
+				"test1@test.com",
+				"test2@test.com",
+				"test3@test.com",
+				"test4@test.com",
+				"test5@test.com",
+			};
+			if (emails.Exists(x => x == email))
+			{
+				return Json("Email already exists.");
+			}
+			else
+			{
+				return Json(true);
+			}
 		}
 	}
 }
