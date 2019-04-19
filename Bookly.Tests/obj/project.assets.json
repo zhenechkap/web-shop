@@ -16203,11 +16203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly.Tests/Bookly.Tests.csproj",
+      "projectUniqueName": "/Users/alexvahrusev/workspace/web-shop/Bookly.Tests/Bookly.Tests.csproj",
       "projectName": "Bookly.Tests",
-      "projectPath": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly.Tests/Bookly.Tests.csproj",
+      "projectPath": "/Users/alexvahrusev/workspace/web-shop/Bookly.Tests/Bookly.Tests.csproj",
       "packagesPath": "/Users/alexvahrusev/.nuget/packages/",
-      "outputPath": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly.Tests/obj/",
+      "outputPath": "/Users/alexvahrusev/workspace/web-shop/Bookly.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -16224,8 +16224,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/Bookly.csproj": {
-              "projectPath": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/Bookly.csproj"
+            "/Users/alexvahrusev/workspace/web-shop/Bookly/Bookly.csproj": {
+              "projectPath": "/Users/alexvahrusev/workspace/web-shop/Bookly/Bookly.csproj"
             }
           }
         }

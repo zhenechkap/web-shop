@@ -13,9 +13,9 @@ namespace Bookly.Pages
 {
     public class EditBookModel : PageModel
     {
-        private readonly LittlePacktBookStoreDbContex _context;
+        private readonly BooklyDbContex _context;
 
-        public EditBookModel(LittlePacktBookStoreDbContex context)
+        public EditBookModel(BooklyDbContex context)
         {
             _context = context;
         }

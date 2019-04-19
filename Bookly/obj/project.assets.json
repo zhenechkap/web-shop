@@ -14696,11 +14696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/Bookly.csproj",
+      "projectUniqueName": "/Users/alexvahrusev/workspace/web-shop/Bookly/Bookly.csproj",
       "projectName": "Bookly",
-      "projectPath": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/Bookly.csproj",
+      "projectPath": "/Users/alexvahrusev/workspace/web-shop/Bookly/Bookly.csproj",
       "packagesPath": "/Users/alexvahrusev/.nuget/packages/",
-      "outputPath": "/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/",
+      "outputPath": "/Users/alexvahrusev/workspace/web-shop/Bookly/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

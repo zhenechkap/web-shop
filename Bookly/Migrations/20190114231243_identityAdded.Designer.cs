@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bookly.Migrations
 {
-    [DbContext(typeof(LittlePacktBookStoreDbContex))]
+    [DbContext(typeof(BooklyDbContex))]
     [Migration("20190114231243_identityAdded")]
     partial class identityAdded
     {
