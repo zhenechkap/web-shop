@@ -1,49 +1,49 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>LittlePacktBookstore</name>
+        <name>Bookly</name>
     </assembly>
     <members>
-        <member name="T:LittlePacktBookstore.Controllers.BookController">
+        <member name="T:Bookly.Controllers.BookController">
             <summary>
             Book Controller.
             </summary>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.#ctor(LittlePacktBookstore.Services.IRepository{LittlePacktBookstore.Models.Book},Microsoft.Extensions.Logging.ILogger{LittlePacktBookstore.Controllers.BookController})">
+        <member name="M:Bookly.Controllers.BookController.#ctor(Bookly.Services.IRepository{Bookly.Models.Book},Microsoft.Extensions.Logging.ILogger{Bookly.Controllers.BookController})">
             <summary>
             Constructor for the book controller.
             </summary>
             <param name="bookRepository">DI injected Book Repository</param>
             <param name="logger">DI injected logger</param>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.Get">
+        <member name="M:Bookly.Controllers.BookController.Get">
             <summary>
             This returns all the books.
             </summary>
             <returns>IEnumerable of books</returns>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.Get(System.Int32)">
+        <member name="M:Bookly.Controllers.BookController.Get(System.Int32)">
             <summary>
             This method returns one book
             </summary>
             <param name="id">Id of the book.</param>
             <returns>A book.</returns>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.Post(LittlePacktBookstore.Models.Book)">
+        <member name="M:Bookly.Controllers.BookController.Post(Bookly.Models.Book)">
             <summary>
             The post method for adding a book
             </summary>
             <param name="book">Type of Book</param>
             <returns>Created on success or appropriate code otherwise.</returns>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.Put(LittlePacktBookstore.Models.Book)">
+        <member name="M:Bookly.Controllers.BookController.Put(Bookly.Models.Book)">
             <summary>
             Put method to edit an existing book.
             </summary>
             <param name="book">Recieves Book.</param>
             <returns>Appropriate Http code.</returns>
         </member>
-        <member name="M:LittlePacktBookstore.Controllers.BookController.Delete(System.Int32)">
+        <member name="M:Bookly.Controllers.BookController.Delete(System.Int32)">
             <summary>
             Deletes an existing book.
             </summary>

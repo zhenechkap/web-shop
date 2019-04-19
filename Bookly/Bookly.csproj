@@ -5,17 +5,9 @@
     <UserSecretsId>574173a4-10b8-4133-a69a-e23e9bdaa364</UserSecretsId>
     <AssemblyName>Bookly</AssemblyName>
     <RootNamespace>Bookly</RootNamespace>
-    <ReleaseVersion>3.2</ReleaseVersion>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\ronnie\source\repos\Section 1\02. End\LittlePacktBookstore\LittlePacktBookstore\LittlePacktBookstore.xml</DocumentationFile>
-  </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\ronnie\source\repos\Asp.Net2\Section 10\02\LittlePacktBookstore\LittlePacktBookstore\bin\Release\LittlePacktBookstore.xml</DocumentationFile>
-    <OutputPath>bin\Release\</OutputPath>
-  </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Controllers\UserController.cs~RF1757b5.TMP" />
