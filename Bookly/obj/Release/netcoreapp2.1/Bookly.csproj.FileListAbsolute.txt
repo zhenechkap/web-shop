@@ -1,0 +1,7 @@
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.csprojAssemblyReference.cache
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.csproj.CoreCompileInputs.cache
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.RazorAssemblyInfo.cache
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.RazorAssemblyInfo.cs
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.AssemblyInfoInputs.cache
+/Users/alexvahrusev/Downloads/Build-a-Real-World-App-with-ASP.NET-Core-MVC-master 2/Section 10/02/Bookly/Bookly/obj/Release/netcoreapp2.1/Bookly.AssemblyInfo.cs
